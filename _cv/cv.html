@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nikos Sarris — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  :root { --text: #1c1917; --muted: #57534e; --light: #78716c; --rule: #e7e5e4; --accent: #2563eb; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font: 9.3pt/1.4 "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--text); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 10px; border-bottom: 2px solid var(--text); }
+  h1 { font-size: 24pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+  .title { font-size: 11.5pt; color: var(--accent); font-weight: 600; margin-top: 4px; }
+  .contact { text-align: right; font-size: 8.8pt; color: var(--muted); line-height: 1.6; }
+
+  .summary { margin: 10px 0 0; color: var(--muted); }
+  .summary strong { color: var(--text); font-weight: 600; }
+
+  h2 { font-size: 8.5pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+       margin: 12px 0 7px; padding-bottom: 3px; border-bottom: 1px solid var(--rule); }
+
+  .job { margin-bottom: 9px; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .company { font-size: 11pt; font-weight: 700; }
+  .company small { font-size: 8.8pt; font-weight: 400; color: var(--light); margin-left: 6px; }
+  .dates { font-size: 8.8pt; color: var(--muted); white-space: nowrap; }
+  .blurb { font-size: 8.6pt; color: var(--light); font-style: italic; margin: 1px 0 3px; }
+  .role { display: flex; justify-content: space-between; font-weight: 600; margin-top: 5px; }
+  .role .dates { font-weight: 400; }
+  ul { margin: 2px 0 0 14px; }
+  li { margin: 1.5px 0; padding-left: 2px; }
+  li::marker { color: var(--accent); }
+  li strong { font-weight: 600; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+  .edu { margin-bottom: 7px; break-inside: avoid; }
+  .edu-head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 600; }
+  .sub { color: var(--muted); font-size: 9pt; }
+
+  .skills { display: grid; grid-template-columns: 88px 1fr; gap: 3px 10px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Nikos Sarris</h1>
+    <div class="title">Senior Software Engineer · Backend &amp; Data</div>
+  </div>
+  <div class="contact">
+    Athens, Greece<br>
+    <a href="mailto:sarris.nikos68@gmail.com">sarris.nikos68@gmail.com</a><br>
+    <a href="https://nicksar.github.io">nicksar.github.io</a> · <a href="https://www.linkedin.com/in/nikossarris/">linkedin.com/in/nikossarris</a><br>
+    <a href="https://github.com/NickSar">github.com/NickSar</a>
+  </div>
+</header>
+
+<p class="summary">
+  Senior Software Engineer with <strong>10+ years</strong> designing event-driven systems and streaming data pipelines
+  across Amsterdam, Berlin and Athens. Experienced in taking products from zero to production, introducing
+  platform components adopted across teams, and leading system design. <strong>Toptal Verified Expert</strong> (Top 3% Talent).
+</p>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <span class="company">PandaDoc <small>Athens, Greece</small></span>
+    <span class="dates">Sep 2024 – Present</span>
+  </div>
+  <div class="blurb">End-to-end agreement management platform: from creation to signature to payment.</div>
+
+  <div class="role"><span>Senior Software Engineer II</span><span class="dates">Jun 2026 – Present</span></div>
+  <ul>
+    <li>Designed and led the implementation of PandaDoc's new <strong>recipient portal</strong>, from zero to production.</li>
+  </ul>
+
+  <div class="role"><span>Senior Software Engineer</span><span class="dates">Sep 2024 – Jun 2026</span></div>
+  <ul>
+    <li>Introduced <strong>Debezium Change Data Capture (CDC)</strong> to keep data in sync between microservices, and turned it into a reusable component adopted across teams.</li>
+    <li>Improved Deal Room page rendering performance by <strong>50%</strong> by re-architecting inefficient legacy endpoints.</li>
+    <li>Built Deal Room features, including analytics dashboards and task notifications.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="company">HelloFresh <small>Berlin, Germany</small></span>
+    <span class="dates">Feb 2019 – Aug 2024</span>
+  </div>
+  <div class="blurb">Global meal-kit leader, delivering over 1 billion meals in 2023.</div>
+
+  <div class="role"><span>Senior Backend Engineer</span><span class="dates">Jan 2022 – Aug 2024</span></div>
+  <ul>
+    <li>Designed and led the extraction of communication preferences from the monolith into a new <strong>Python/FastAPI</strong> service, using Domain-Driven Design and Event Sourcing.</li>
+    <li>Designed and led an in-house mobile event-tracking service (<strong>Kotlin, Kafka</strong>) that replaced Google Analytics and improved visibility into campaign performance.</li>
+    <li>Integrated Twilio with Salesforce Marketing Cloud, enabling Marketing to launch SMS campaigns.</li>
+    <li>Member of the hiring team, running system design and technical interviews; part of the on-call rotation.</li>
+  </ul>
+
+  <div class="role"><span>Software Engineer</span><span class="dates">Feb 2019 – Jan 2022</span></div>
+  <ul>
+    <li>Migrated modules from PHP monoliths to Go and Python microservices, reducing maintenance overhead.</li>
+    <li>Built ETL pipelines with <strong>PySpark, EMR, Airflow and Kafka</strong> to deliver clean data products to the business.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="company">iBOOD <small>Backend Engineer · Amsterdam, Netherlands</small></span>
+    <span class="dates">Oct 2017 – Dec 2018</span>
+  </div>
+  <ul>
+    <li>Extracted warehouse logic from the Odoo monolith into a Python/Flask microservice.</li>
+    <li>Built features for logistics, finance and marketing in Python/Odoo.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="company">CapCloud <small>Backend Engineer · Utrecht, Netherlands</small></span>
+    <span class="dates">Jan 2016 – Sep 2017</span>
+  </div>
+  <ul>
+    <li>Built the public client integration API and a component matching employee qualifications to job descriptions (Python/Django).</li>
+  </ul>
+</div>
+
+<h2>Skills</h2>
+<dl class="skills">
+  <dt>Core</dt><dd>Python, Kafka, Debezium, PySpark, Airflow, FastAPI, PostgreSQL, Kubernetes, AWS</dd>
+  <dt>Also</dt><dd>Go, Kotlin, Django, Terraform, Docker, GitHub Actions, Prometheus, Grafana</dd>
+  <dt>Practices</dt><dd>Microservices, Event Sourcing, Domain-Driven Design, Change Data Capture, ETL, CI/CD</dd>
+  <dt>Languages</dt><dd>Greek (native), English (proficient, ECPE), French (basic, DELF), German (basic)</dd>
+  <dt>Interests</dt><dd>Marathon running, basketball, literature</dd>
+</dl>
+
+<div class="two-col">
+  <div>
+    <h2>Education</h2>
+    <div class="edu">
+      <div class="edu-head"><span>MSc Computer Science</span><span class="dates">2013 – 2015</span></div>
+      <div class="sub">VU Amsterdam · High Performance Computing</div>
+    </div>
+    <div class="edu">
+      <div class="edu-head"><span>Diploma, Electrical &amp; Computer Eng.</span><span class="dates">2005 – 2012</span></div>
+      <div class="sub">National Technical University of Athens</div>
+    </div>
+  </div>
+  <div>
+    <h2>Publication</h2>
+    <div class="edu">
+      <div class="edu-head"><span>IFL '17 Symposium Proceedings</span><span class="dates">2017</span></div>
+      <div class="sub">“Towards Compiling SAC for the Xeon Phi Knights Corner and Knights Landing Architectures: Strategies and Experiments”</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

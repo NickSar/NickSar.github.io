@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nikos Sarris — Senior Software Engineer</title>
+  <meta name="description" content="Nikos Sarris, Senior Software Engineer in Athens. 10+ years building microservices and data pipelines at PandaDoc, HelloFresh and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">ns<span>.</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Publication</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="mono kicker">Hi, I'm</p>
+      <h1>Nikos Sarris.</h1>
+      <h2>I design scalable microservices and high-throughput data pipelines.</h2>
+      <p class="lead">
+        Senior Software Engineer at <strong>PandaDoc</strong> in Athens. For over 10 years I've been
+        breaking down monoliths, building event-driven services on Kubernetes and shipping reliable
+        data infrastructure.
+      </p>
+      <p class="badge mono small"><a href="https://www.toptal.com/developers/resume/nikolaos-sarris" target="_blank" rel="noopener">✓ Toptal Verified Expert</a></p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <h3 class="section-title"><span class="mono">01.</span> About</h3>
+      <div class="about-grid">
+        <div>
+          <p>
+            I enjoy taking tangled legacy systems apart and rebuilding them as clean, event-driven
+            services. I've done this in Amsterdam, Berlin and Athens, at companies ranging from small
+            platforms to HelloFresh, which delivers more than a billion meals a year.
+          </p>
+          <p>
+            I focus on Domain-Driven Design, event streaming and building components that other teams
+            can adopt. My most recent example is introducing Change Data Capture at PandaDoc.
+          </p>
+          <p>
+            My background is in high-performance computing, and I still have a soft spot for compilers
+            and programming language design.
+          </p>
+        </div>
+        <div>
+          <p class="mono small muted">Core stack</p>
+          <ul class="tags">
+            <li>Python</li><li>Kafka</li><li>Debezium</li><li>PySpark</li><li>Airflow</li>
+            <li>FastAPI</li><li>PostgreSQL</li><li>Kubernetes</li><li>AWS</li>
+          </ul>
+          <p class="mono small muted" style="margin-top:20px">Also</p>
+          <ul class="tags subtle">
+            <li>Go</li><li>Kotlin</li><li>Django</li><li>Terraform</li><li>Docker</li><li>GitHub Actions</li>
+            <li>Prometheus</li><li>Grafana</li>
+          </ul>
+          <p class="mono small muted" style="margin-top:20px">Spoken languages</p>
+          <p class="small">Greek (native) · English (proficient) · French &amp; German (basic)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container section">
+      <h3 class="section-title"><span class="mono">02.</span> Experience</h3>
+      <ol class="timeline">
+        <li>
+          <div class="when mono">Sep 2024 — Present</div>
+          <div>
+            <h4><a href="https://www.pandadoc.com" target="_blank" rel="noopener">PandaDoc</a></h4>
+            <p class="small muted">Athens, Greece · End-to-end agreement management platform</p>
+            <p class="role">Senior Software Engineer II <span class="mono small muted">· Jun 2026 — Present</span></p>
+            <p class="role">Senior Software Engineer <span class="mono small muted">· Sep 2024 — Jun 2026</span></p>
+            <ul>
+              <li><strong>Introduced Debezium Change Data Capture (CDC)</strong> to keep data in sync between microservices, and turned it into a reusable component adopted across teams. <em>This work led to my promotion.</em></li>
+              <li>Improved Deal Room page rendering performance by <strong>50%</strong> by re-architecting inefficient legacy endpoints.</li>
+              <li>Built Deal Room features, including analytics dashboards and task notifications.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Feb 2019 — Aug 2024</div>
+          <div>
+            <h4><a href="https://www.hellofresh.com" target="_blank" rel="noopener">HelloFresh</a></h4>
+            <p class="small muted">Berlin, Germany · Global meal-kit leader, 1B+ meals delivered in 2023</p>
+            <p class="role">Senior Backend Engineer <span class="mono small muted">· Jan 2022 — Aug 2024</span></p>
+            <ul>
+              <li>Led the extraction of communication preferences from the monolith into a new Python/FastAPI service, using Domain-Driven Design and Event Sourcing.</li>
+              <li>Led the build of an in-house mobile event-tracking service (Kotlin, Kafka) that replaced Google Analytics and gave better visibility into campaign performance.</li>
+              <li>Integrated Twilio with Salesforce Marketing Cloud so Marketing could launch SMS campaigns.</li>
+              <li>Ran system design and technical interviews as part of the hiring team.</li>
+            </ul>
+            <p class="role">Software Engineer <span class="mono small muted">· Feb 2019 — Jan 2022</span></p>
+            <ul>
+              <li>Migrated modules from PHP monoliths to Go and Python microservices, reducing maintenance overhead.</li>
+              <li>Built ETL pipelines with PySpark, EMR, Airflow and Kafka to deliver clean data products to the business.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Oct 2017 — Dec 2018</div>
+          <div>
+            <h4><a href="https://www.ibood.com" target="_blank" rel="noopener">iBOOD</a></h4>
+            <p class="small muted">Amsterdam, Netherlands · European daily-deals e-commerce</p>
+            <p class="role">Backend Engineer</p>
+            <ul>
+              <li>Extracted warehouse logic from the Odoo monolith into a Python/Flask microservice.</li>
+              <li>Built features for logistics, finance and marketing in Python/Odoo.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Jan 2016 — Sep 2017</div>
+          <div>
+            <h4>CapCloud</h4>
+            <p class="small muted">Utrecht, Netherlands · Learning &amp; development platform</p>
+            <p class="role">Backend Engineer</p>
+            <ul>
+              <li>Built the public client integration API and a component matching employee qualifications to job descriptions (Python/Django).</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="subhead">Education</h3>
+      <ol class="timeline">
+        <li>
+          <div class="when mono">2013 — 2015</div>
+          <div>
+            <h4>MSc Computer Science · Vrije Universiteit Amsterdam</h4>
+            <p class="small muted">Specialization in High Performance Computing</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">2005 — 2012</div>
+          <div>
+            <h4>Diploma, Electrical &amp; Computer Engineering · National Technical University of Athens</h4>
+            
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="container section">
+      <h3 class="section-title"><span class="mono">03.</span> Publication</h3>
+      <article class="card">
+        <p class="mono small muted">Publication · August 2017</p>
+        <h4>Towards Compiling SAC for the Xeon Phi Knights Corner and Knights Landing Architectures: Strategies and Experiments</h4>
+        <p>IFL '17, 29th Symposium on the Implementation and Application of Functional Programming Languages. Based on my MSc thesis on compiling the data-parallel language SAC for Intel's many-core Xeon Phi processors.</p>
+        <!-- TODO: add DOI link, e.g. <div class="links"><a href="https://doi.org/...">Read paper ↗</a></div> -->
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section contact">
+      <h3 class="section-title"><span class="mono">04.</span> Contact</h3>
+      <p class="lead">I'm always happy to talk about interesting engineering problems or new opportunities.</p>
+      <a class="btn primary" href="mailto:sarris.nikos68@gmail.com">Say hello</a>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/nikossarris/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/NickSar" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.toptal.com/developers/resume/nikolaos-sarris" target="_blank" rel="noopener">Toptal</a></li>
+        <li><a href="mailto:sarris.nikos68@gmail.com">Email</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer mono small muted">
+    © <span id="year"></span> Nikos Sarris · Athens, Greece
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

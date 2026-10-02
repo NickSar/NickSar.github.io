@@ -154,16 +154,20 @@ p + p { margin-top: 16px; }
 .timeline ul li strong { color: var(--text); }
 #research .card { max-width: 760px; }
 #research .card:hover { transform: none; }
-.badge { margin-top: 20px; color: var(--muted); }
-.badge a { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 500; }
-.badge a:hover { text-decoration: none; }
 
-/* Hero with Toptal badge */
-.hero { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
-.hero-text { flex: 1; min-width: 0; }
-.hero-badge { flex-shrink: 0; }
-.hero-badge a:hover { text-decoration: underline; }
-@media (max-width: 700px) {
-  .hero { flex-direction: column; align-items: stretch; gap: 40px; }
-  .hero-badge { align-self: center; }
+/* Toptal badge */
+.toptal-badge {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 24px;
+  padding: 6px 14px 6px 8px; border: 1px solid var(--border); border-radius: 999px;
+  color: var(--muted); font-size: 0.9rem; transition: border-color .15s;
+}
+.toptal-badge:hover { text-decoration: none; border-color: #25a9ef; }
+.toptal-badge strong { color: var(--text); font-weight: 600; }
+.toptal-badge .hex {
+  --hex: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  width: 26px; height: 28px; padding: 2px; background: #25a9ef; clip-path: var(--hex);
+}
+.toptal-badge .hex span {
+  display: grid; place-items: center; width: 100%; height: 100%;
+  background: #204ecf; color: #fff; font-size: 12px; font-weight: 700; clip-path: var(--hex);
 }

@@ -163,3 +163,10 @@ p + p { margin-top: 16px; }
   .hero { flex-direction: column; align-items: stretch; }
   .hero-badge { align-self: flex-start; zoom: 0.5; }
 }
+
+/* Consistency polish */
+.timeline h4 a { color: var(--text); }
+.timeline h4 a:hover { color: var(--accent); text-decoration: none; }
+.timeline h4 { margin-bottom: 2px; }
+.timeline h4 + .small.muted { margin-bottom: 10px; }
+.role .mono { font-weight: 400; }

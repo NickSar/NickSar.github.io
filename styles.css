@@ -157,3 +157,13 @@ p + p { margin-top: 16px; }
 .badge { margin-top: 20px; color: var(--muted); }
 .badge a { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 500; }
 .badge a:hover { text-decoration: none; }
+
+/* Hero with Toptal badge */
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.hero-text { flex: 1; min-width: 0; }
+.hero-badge { flex-shrink: 0; }
+.hero-badge a:hover { text-decoration: underline; }
+@media (max-width: 700px) {
+  .hero { flex-direction: column; align-items: stretch; gap: 40px; }
+  .hero-badge { align-self: center; }
+}
